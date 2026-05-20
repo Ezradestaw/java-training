@@ -1,11 +1,20 @@
 package first_package;
-
+import java.util.Scanner;
 public class Try2 {
 	public static void main(String[] args) {
-//		java.util.Scanner input  = new java.util.Scanner(System.in);
-//		float studentGrade = input.nextFloat();
-//		System.out.println(studentGrade >60 ? "passed":"Failed");
-		System.out.println((true?2:"ezra"));
+		Scanner input  = new Scanner(System.in);
+		double total = 0;
+		int gradeCounter = 1;
+		while (gradeCounter<=10) {
+			System.out.println("enter grade: ");
+			int grade = input.nextInt();
+			total += grade;
+			gradeCounter +=1;
+		}
+		double average = total/gradeCounter;
+		System.out.println(average);
+		
+		
 	}
 
 }
